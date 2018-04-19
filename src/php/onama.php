@@ -49,9 +49,7 @@
 
         <nav>
           <ul>
-            <li class="nav-top"><a href="unos.php">UNOS</a></li>
             <li class="nav-top"><a href="proizvodi.php">PROIZVODI</a></li>
-            <li class="nav-top"><a href="administracija.php">ADMIN</a></li>
             <li class="nav-top"><a href="kosarica.php">KOŠARICA</a></li>
           </ul>
         </nav>

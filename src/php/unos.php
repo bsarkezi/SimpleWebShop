@@ -64,68 +64,80 @@
 
 
     <main>
-      <form name="unos" action="upload.php" method="POST" enctype="multipart/form-data" id="unos" onsubmit="return unos_provjera()">
-        <table class="table-unos">
-          <tr>
-            <td>Naslov proizvoda:    </td>
-            <td><input type="text" name="naziv-proizvoda" id="prodName"><p id="ime-greska"></td>
+      <?php
+        if(isset($_COOKIE["korisnik"])){
+          if($_COOKIE["korisnik"]=="admin"){
+            echo'
+            <form name="unos" action="upload.php" method="POST" enctype="multipart/form-data" id="unos" onsubmit="return unos_provjera()">
+              <table class="table-unos">
+                <tr>
+                  <td>Naslov proizvoda:    </td>
+                  <td><input type="text" name="naziv-proizvoda" id="prodName"><p id="ime-greska"></td>
 
-          </tr>
-          <tr>
-            <td>Šifra proizvoda: </td>
-            <td><input type="text" name="sifra-proizvoda" id="sifra"><p id="sifra-greska"></p>
-                </td>
-          </tr>
+                </tr>
+                <tr>
+                  <td>Šifra proizvoda: </td>
+                  <td><input type="text" name="sifra-proizvoda" id="sifra"><p id="sifra-greska"></p>
+                      </td>
+                </tr>
 
-          <tr>
-            <td>Vrsta proizvoda: </td>
-            <td>
-              <select name="vrsta-proizvoda" selected="selected" id="kategorija">
-                <option selected disabled></option>
-                <option value="Procesor">Procesor</option>
-                <option value="Grafička kartica">Grafička kartica</option>
-                <option value="Matična ploča">Matična ploča</option>
-                <option value="Tvrdi disk">Tvrdi disk</option>
-                <option value="Optički uređaj">Optički uređaj</option>
-                <option value="Radna memorija">Radna memorija</option>
-                <option value="Kućište">Kućište</option>
-                <option value="Napajanje">Napajanje</option>
-                <option value="Hladnjak za CPU">Hladnjak za CPU</option>
-              </select><p id="kat-greska">
-            </td>
-          </tr>
+                <tr>
+                  <td>Vrsta proizvoda: </td>
+                  <td>
+                    <select name="vrsta-proizvoda" selected="selected" id="kategorija">
+                      <option selected disabled></option>
+                      <option value="Procesor">Procesor</option>
+                      <option value="Grafička kartica">Grafička kartica</option>
+                      <option value="Matična ploča">Matična ploča</option>
+                      <option value="Tvrdi disk">Tvrdi disk</option>
+                      <option value="Optički uređaj">Optički uređaj</option>
+                      <option value="Radna memorija">Radna memorija</option>
+                      <option value="Kućište">Kućište</option>
+                      <option value="Napajanje">Napajanje</option>
+                      <option value="Hladnjak za CPU">Hladnjak za CPU</option>
+                    </select><p id="kat-greska">
+                  </td>
+                </tr>
 
-          <tr>
-            <td id="opis-proizvoda">Opis proizvoda:</td>
-            <td><textarea rows="10" cols="30" name="opis-proizvoda" id="opis"></textarea><p id="opis-greska"></td>
-          </tr>
+                <tr>
+                  <td id="opis-proizvoda">Opis proizvoda:</td>
+                  <td><textarea rows="10" cols="30" name="opis-proizvoda" id="opis"></textarea><p id="opis-greska"></td>
+                </tr>
 
-          <tr>
-            <td>Cijena prozvoda:</td>
-            <td><input type="text" name="cijena-proizvoda" id="cijena"><p id="cijena-greska"></td>
-          </tr>
+                <tr>
+                  <td>Cijena prozvoda:</td>
+                  <td><input type="text" name="cijena-proizvoda" id="cijena"><p id="cijena-greska"></td>
+                </tr>
 
-          <tr>
-            <td>Slika proizvoda: </td>
-            <td><input type="file" name="fileToUpload"></td>
-          </tr>
+                <tr>
+                  <td>Slika proizvoda: </td>
+                  <td><input type="file" name="fileToUpload"></td>
+                </tr>
 
-          <tr>
-            <td>Arhiviranje podataka?</td>
-            <td><input type="checkbox" name="slanje-podataka" id ="arhiviranje"></td>
+                <tr>
+                  <td>Arhiviranje podataka?</td>
+                  <td><input type="checkbox" name="slanje-podataka" id ="arhiviranje"></td>
 
-          </tr>
+                </tr>
 
-          <tr><td><input type="submit" value="Predaj" id="predaj"></td></tr>
+                <tr><td><input type="submit" value="Predaj" id="predaj"></td></tr>
 
-        </table>
+              </table>
 
-      </form>
+            </form>';
+          }
+        }
+
+        else{
+          echo"Nemate pravo pristupa ovoj stranici!";
+        }
+      ?>
+
+      
 
 
 
     </main>
-    <!--<script src="skripta.js"></script>-->
 
   </body>
 
