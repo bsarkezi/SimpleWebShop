@@ -1,0 +1,237 @@
+*{
+  font-family: verdana;
+}
+
+body{
+  background-color: #969696;
+  margin: 0px;
+  
+}
+
+body>main{
+  text-align: center;
+}
+
+header{
+  background-color: black;
+  padding-bottom: 90px;
+
+}
+
+header h1{
+  color: white;
+}
+
+.header-main-div{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header-nav1{
+  position: absolute;
+  right: 0px;
+}
+
+header>ul{
+  position: absolute;
+  right:0px;
+}
+
+header a{
+  color: red;
+  text-decoration: none;
+  display: inline-block;
+}
+
+header>ul{
+  list-style-type: none;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+header li{
+    display: inline-block;
+    background-color: rgba(221, 221, 221,0.5);
+    float: right;
+}
+
+header ul li a{
+  padding: 10px;
+  margin: 0px;
+  color: white;
+}
+
+header>div>div{
+  display: inline-block;
+  float: right;
+  margin-top:20px;
+}
+
+footer {
+  background-color: black;
+  padding-bottom: 40px;
+  width: 100%;
+  margin-top:100px;
+  overflow: auto;
+}
+
+footer p{
+  color: white;
+  text-align: center;
+  padding-top: 34px;
+}
+
+
+/* @media (max-width:900px){
+  *{
+    display: none;
+  }
+} */
+
+
+/*------------------------------------------------------------------------------------------------*/
+
+.clear{
+  clear:both;
+}
+
+
+.push-footer-down{
+  margin-bottom: 1100px;
+}
+
+
+.nav-top{
+  list-style-type: none;
+  display:block;
+  padding: 10px;
+  background-color: rgba(221, 221, 221,0.5);
+  float: left;
+  margin-bottom: 30px;
+}
+
+.nav-top:hover{
+  background-color: rgb(163, 163, 163);
+}
+
+.nav-top a{
+  color: white;
+  text-decoration: none;
+}
+
+.nav-top a:hover{
+  background-color: rgb(163, 163, 163);
+}
+
+
+.main-content-article{
+  width: 200px;
+  float:left;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  margin-top:20px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid rgb(221,221,221);
+}
+
+main div section{
+  width: 80%;
+}
+
+.vise{
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  background-color: black;
+  padding:5px 10px 5px 10px;
+  font-weight: bold;
+}
+/*------------------------------------------UNOS.HTML----------------------------------------------------------------*/
+.table-unos td{
+  border:none;
+  padding-bottom: 10px;
+}
+
+
+#unos{
+  width:500px;
+  margin: 0 auto;
+}
+
+/*-------------------------------------------REGISTRACIJA.PHP---------------------------------------------------*/
+
+
+#reg-main *{
+    font-size: 17pt;
+    border: none;
+    color: black;
+    
+}
+
+#reg-main{
+    display: inline-block;
+    background-color: white;
+    opacity: 0.7;
+    padding:15px;
+}
+
+#reg-main input[type=submit]{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 3px;
+}
+
+#reg-main input[type=submit]:hover{
+    background-color: #828282;
+}
+
+#reg-main input[type=text]{
+    border: .5px solid grey;
+}
+
+#reg-main input[type=password]{
+    border: .5px solid grey;
+}
+
+
+/*----------------------------------LOGIN.PHP-----------------------------------------*/
+#login-main{
+    display: inline-block;
+    margin: 0 auto;
+    background-color: white;
+    opacity: 0.7;
+    position: relative;
+    padding: 10px;
+}
+
+
+
+#login-main a{
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 120px;
+}
+
+
+#login-main input[type=text], input[type=password]{
+    padding:5px;
+    font-size: 17pt;
+}
+
+#login-main input[type=submit]{
+    background-color: black;
+    color: white;
+    font-size: 17pt;
+    border: none;
+    padding: 3px;
+}
+
+#login-main input[type=submit]:hover{
+    background-color: #828282;
+}
+
